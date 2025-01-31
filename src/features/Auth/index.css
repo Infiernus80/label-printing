@@ -1,0 +1,9 @@
+.contenido_form {
+	background: rgba(243, 244, 246, 1);
+	width: 110rem;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
