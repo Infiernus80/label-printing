@@ -1,0 +1,4 @@
+export enum Roles_App {
+	ADMINISTRADOR = 'ADMINISTRADOR',
+	USUARIO = 'USUARIO',
+}
