@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { Submenu_Tabs_Component } from '../../components/submenu_tabs/Submenu_Tabs_Component';
 import { Roles_App, Tab_Config_Interface } from '../../types';
 import { Tab_Config } from '../../classes/Tab_Config';
+import { Clientes } from './page/Clientes';
+import { Etiquetas } from './page/Etiquetas';
 
 export const Dashboard = () => {
 	const user = useAuthContext(state => state.user);
@@ -53,22 +55,12 @@ const Clientes_tabs = (rol_usuario: Roles_App) => {
 
 const Tabs_Dashboard: Tab_Config_Interface[] = [
 	{
-		children: (
-			<>
-				{' '}
-				<h1>HOLA</h1>
-			</>
-		),
+		children: <Etiquetas />,
 		roles: ['ADMINISTRADOR'],
 		fun_name: Dashboard_tabs,
 	},
 	{
-		children: (
-			<>
-				{' '}
-				<h1>HOLA</h1>
-			</>
-		),
+		children: <Clientes />,
 		roles: ['ADMINISTRADOR'],
 		fun_name: Clientes_tabs,
 	},

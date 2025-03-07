@@ -1,0 +1,12 @@
+.firstButton{
+    border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
